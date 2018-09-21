@@ -17,9 +17,11 @@ const hummus = function(factor) {
 };
 */
 
+/* jshint esversion: 6 */
+
 //Given a desired volume, output grams needed
- 
-const  carolinaNA = function(volume) {
- let mixAmount = volume / 1000 * 23;
- return mixAmount + " grams";
+
+const  carolinaNA = function (volume) {
+  let mixAmount = volume / 1000 * 23;
+  return mixAmount.toFixed(2) + ' grams';
 };
