@@ -23,5 +23,13 @@ const hummus = function(factor) {
 
 const  carolinaNA = function (volume) {
   let mixAmount = volume / 1000 * 23;
-  return mixAmount.toFixed(2) + ' grams';
+  let plates = volume / 20;
+  return mixAmount.toFixed(2) + ' grams, ' + plates.toFixed() + ' plates';
+};
+
+//Given a desired amount of plate, output volum
+
+const platesNeeded = function (plates) {
+  let volume = plates * 20;
+  return volume.toFixed();
 };
